@@ -26,4 +26,12 @@ Utils = {
         array.sort((a, b) => {return a < b ? 1 : -1});
         return array;
     },
+
+    factorial: (n) => {
+        let result = n;
+        while (n !== 1) {
+            result *= (n -= 1);
+        }
+        return result;
+    }
 };
